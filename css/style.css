@@ -10,25 +10,36 @@ body{
 /*Header*/
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background: #111;
-    color: #fff;
-    padding: 5px 2px;
+    background:white;
+    color: black;
+    padding: 15px 20px;
+    gap: 90px;
 }
 header .logo{
     font-weight: bold;
     font-size: 1.5rem;
+    flex: 1;
+
+}
+/*nav{
+    display: flex;
+    gap: 25px;
+}*/
+nav{
+    flex: 2;
 }
 nav ul{
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
     
 }
 nav ul li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 nav ul li a:hover{
     color: #ff6600;
@@ -61,6 +72,41 @@ nav ul li a:hover{
   background: #fff;
   color: #111;
 }
+/*Contact section*/
+.contact-hero{
+    display: flex;
+    min-height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../assets/concert2.jpg") center/cover no-repeat;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+.contact-section{
+    max-width: 600px;
+    color: white;
+}
+
+.contact-section p{
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+/*Getin touch*/
+.getin-touch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 27px;
+}
+.getin-touch-content{
+    max-width: 600px;
+}
+.getin-touch-content h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
 /*Products*/
 .products{
     text-align: center;
@@ -73,7 +119,8 @@ nav ul li a:hover{
 .product-grid {
   display: flex;
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: center;
+  
   flex-wrap: wrap;
 }
 .product-card{
@@ -103,7 +150,25 @@ nav ul li a:hover{
     color: white;
     border: none;
     padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 15px;
+     /* Initially hidden */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
+.product-card button:hover {
+      background: #0056b3;
+}
+/* Show button on hover */
+.product-card:hover button {
+      opacity: 1;
+      transform: translateY(0);
+}
+
 /* Footer */
 footer {
   text-align: center;
