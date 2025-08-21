@@ -98,6 +98,12 @@ nav ul li a:hover{
 .product-card h3 {
   margin: 1rem 0 0.5rem;
 }
+.product-card button{
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
 /* Footer */
 footer {
   text-align: center;
