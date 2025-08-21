@@ -82,11 +82,27 @@ nav ul li a:hover{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 1rem;
     width: 250px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+ /* Hover effect */
+    .product-card:hover {
+      transform: scale(1.05); /* Slightly bigger */
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* More shadow */
+    }
 .product-card img {
   max-width: 100%;
   border-radius: 10px;
 }
 .product-card h3 {
   margin: 1rem 0 0.5rem;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111;
+  color: white;
+  margin-top: 2rem;
 }
