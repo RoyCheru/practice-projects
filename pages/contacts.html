@@ -1,35 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact us</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
     <header>
-    <div class="logo">RoyTech Sound</div>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="pages/contacts.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="contact-hero">
-    <div class="contact-section">
-    <p style="color: red; margin-bottom: 10px;;">Decibel Audio Kenya</p>
-    <p style="font-size: 2.5em;margin-bottom: 15px;font-weight: bold; ">CONTACT US</p>
-    <p>Located in the heart of Nairobi at Luthuli and Kamae Juction, Decibel Audio is your go-to destination for high-quality sound and audio systems.</p>
-    </div>
-  </section>
-  <section class="getin-touch">
-    <div class="getin-touch-content">
-    <h1>Get in touch</h1>
-    <p>We’re here to help you find the perfect audio solution. Whether you need product advice, technical support, or help with an order, our team is ready to assist you.</p>
-    </div>
-  </section>
-</body>
+      <div class="logo">Decibel Audio</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="pages/contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contact-hero">
+      <div class="contact-section">
+        <p style="color: red; margin-bottom: 10px">Decibel Audio Kenya</p>
+        <p style="font-size: 2.5em; margin-bottom: 15px; font-weight: bold">
+          CONTACT US
+        </p>
+        <p>
+          Located in the heart of Nairobi at Luthuli and Kamae Juction, Decibel
+          Audio is your go-to destination for high-quality sound and audio
+          systems.
+        </p>
+      </div>
+    </section>
+    <section class="getin-touch">
+      <div class="getin-touch-content">
+        <h1>Get in touch</h1>
+        <p>
+          We’re here to help you find the perfect audio solution. Whether you
+          need product advice, technical support, or help with an order, our
+          team is ready to assist you.
+        </p>
+      </div>
+    </section>
+    <!--contact Form section-->
+    <section class="contact-form">
+      <div class="form-box">
+        <form action="" method="post" class="form">
+          <div class="form-row">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="your name"
+              required
+            />
+            <input
+              type="email"
+              id="useremail"
+              name="email"
+              placeholder="email"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <input
+              type="number"
+              id="phonenumber"
+              name="phonenumber"
+              placeholder="Phone number"
+              required
+            />
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Select subject"
+            />
+          </div>
+          <textarea
+            name="user_comment"
+            id="comment"
+            placeholder="your comment..."
+            rows="5"
+            cols="40"
+          ></textarea> 
+          <button type="submit" class="send-btn">Send message</button>
+        </form>
+      </div>
+      <div class="box2">
+        <h1>another box</h1>
+        <p>We’re here to help you find the perfect audio solution. Whether you
+          need product advice, technical support, or help with an order, our
+          team is ready to assist you.</p>
+      </div>
+    </section>
+  </body>
 </html>
