@@ -252,7 +252,7 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #f5f5f5;
+    background: #e7e7e7;
     border-radius: 10px;
     /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
     padding: 15px;
@@ -271,14 +271,14 @@ nav ul li a:hover{
     }
 .product-card img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   /*border: 2px solid #ddd;*/
 
 }
 .product-card h3 {
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0 0rem;
 }
 .product-card button{
     background: #007bff;
@@ -307,7 +307,7 @@ nav ul li a:hover{
   font-size: 18px;
   font-weight: bold;
   color: #d9534f;   /* red to stand out */
-  margin: 10px 0;
+  margin: 8px 0;
 }
 .product-card .badge {
   position: absolute;
@@ -435,14 +435,63 @@ footer {
   list-style: none;
   padding: 0;
 }
+
 .footer-column ul li {
   margin-bottom: 10px;
   font-size: 14px;
   cursor: pointer;
 }
-.footer-column ul li:hover {
+.footer-column ul li a{
+  text-decoration: none;
+  color: white;
+}
+.footer-column ul li a:hover {
   color: #f39c12; /* gold hover effect */
 }
 .footer-column{
   text-align: center;
 }
+
+/*Mixers.html css*/
+.search-input {
+  width: 70%;
+  max-width: 500px;
+  padding: 6px 13px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+}
+
+/*.mixer-container{
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Left = fixed width, Right = flexible */
+  /*width: 200px;
+  /*gap: 20px;
+  margin: 20px;*/
+/*}
+/*.mixer-container .product-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+/* Responsive fix 
+@media (max-width: 408px) {
+.mixer-container {
+    grid-template-columns: 1fr; /* stack vertically */
+  /*}
+
+  /*.category-filter {
+    margin-bottom: 20px; /* add spacing when stacked */
+  /*}
+}
+/*.mixer-container .product-card{
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+.mixer-container .product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}*/
+
